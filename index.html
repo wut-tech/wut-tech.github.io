@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Onde Vamos Almoçar?</title>
+    <script type="text/javascript" src="lista-restaurantes.js"></script>
+</head>
+<body>
+<h1>Onde Vamos almocar?</h1>
+<p>
+    <button id="escolhe-comer" onclick="escolheRestaurante()">Escolha por mim</button>
+</p>
+<h3 id="resultado"></h3>
+<script>
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    }
+
+    function escolheRestaurante() {
+        const resultado = document.getElementById("resultado");
+
+        const restaurantes = data;
+
+        const count = Object.keys(restaurantes).length;
+
+        const indice = getRandomInt(0, count)
+
+        const escolha = restaurantes[indice].name
+
+        resultado.textContent = "Vamos almoçar no " + escolha;
+    }
+</script>
+</body>
+</html>

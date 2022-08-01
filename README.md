@@ -1,2 +1,2 @@
-# wut-tech.github.io
-Vamos almoçar?
+# Vamos Almocar?
+Este projeto irá decidir sobre a indecisão dos presentes.

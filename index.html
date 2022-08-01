@@ -29,7 +29,12 @@
 
         const escolha = restaurantes[indice].name
 
-        resultado.textContent = "Vamos almoçar no " + escolha;
+        if (restaurantes[indice].id === 5) {
+            resultado.textContent = escolha;
+        }
+        else {
+            resultado.textContent = "Vamos almoçar no " + escolha;
+        }
     }
 </script>
 </body>

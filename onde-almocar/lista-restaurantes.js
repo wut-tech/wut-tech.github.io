@@ -45,7 +45,7 @@ data = [
   },
   {
     "id": 12,
-    "name": "Vegan Pop"
+    "name": "Pop Vegan"
   },
   {
     "id": 13,

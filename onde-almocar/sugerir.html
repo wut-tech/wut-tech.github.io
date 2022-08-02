@@ -62,10 +62,10 @@
             </ul>
             <div class="media equal-1-1">
                 <div id="map1" class="map" style="overflow: hidden;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3489097982892!2d-46.660330470759554!3d-23.554229969675937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd523aaaab%3A0x79617f1a96381f29!2sAmicci!5e0!3m2!1spt-BR!2sbr!4v1659403095694!5m2!1spt-BR!2sbr" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3489097982892!2d-46.660330470759554!3d-23.554229969675937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd523aaaab%3A0x79617f1a96381f29!2sAmicci!5e0!3m2!1spt-BR!2sbr!4v1659403095694!5m2!1spt-BR!2sbr" id="mapa" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="card bg-black text-white">
+            <div id="endereco" class="card bg-black text-white">
                 <div class="card-body">
                     <h5>Rua Bela Cintra, 772 - Consolação <span class="font-weight-bold d-block">São Paulo - SP</span></h5>
                 </div>
@@ -78,5 +78,14 @@
         <p>Indecisos do Almoço, by <a href="https://github.com/phalopes" target="_blank" class="text-white">@phalopes</a>.</p>
     </footer>
 </div>
+
+<script>
+    const mapa = document.getElementById("mapa");
+    let width = document.getElementById("endereco").offsetWidth;
+
+    mapa.setAttribute("width", "" + width);
+
+</script>
+
 </body>
 </html>
